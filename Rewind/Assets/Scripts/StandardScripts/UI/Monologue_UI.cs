@@ -22,7 +22,7 @@ public class Monologue_UI : MonoBehaviour
     public Text speakerNameUI;
     public Text dialogueUI;
     public int currentLineIndex;
-    public string newScene;
+    public Scene newScene;
 
     public bool utilizeImages;
     public Transform imageTarget;

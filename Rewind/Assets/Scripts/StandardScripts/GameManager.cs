@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
     public GameObject errorMessage;
     public Text errorMessageText;
     private GameData loadManager;
-    public string currentSceneName;
     public GameObject loadingScreen;
     public GameObject pausedMenu;
     public bool isGamePaused;
@@ -84,7 +83,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GoToScene(string newScene)
+    public void GoToScene(Scene newScene)
+    {
+        GoToSceneName(newScene.ToString());
+    }
+
+    public void GoToSceneName(string SceneName)
     {
         if (loadingScreen != null)
         {
@@ -100,7 +104,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        SceneManager.LoadSceneAsync(newScene);
+        SceneManager.LoadSceneAsync(SceneName);
     }
 
     public void SendErrorMessage(string newErrorMessage)
