@@ -32,7 +32,7 @@ public class Monologue_UI : MonoBehaviour
 
     private void Start()
     {
-        if (GameData.instance != null)
+        if (PlayData.instance != null)
         {
             //dialogueLines = GameData.instance.dialogueLines;
             //speakerNames = GameData.instance.speakerNames;

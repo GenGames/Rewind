@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject errorMessage;
     public Text errorMessageText;
-    private GameData loadManager;
+    private PlayData playData;
     public GameObject loadingScreen;
     public GameObject pausedMenu;
     public bool isGamePaused;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             AudioManager.instance.Play("ArenaMusic");
         }
 
-        loadManager = GameData.instance;
+        playData = PlayData.instance;
         if (pausedMenu != null)
         {
             pausedMenu.SetActive(false);
