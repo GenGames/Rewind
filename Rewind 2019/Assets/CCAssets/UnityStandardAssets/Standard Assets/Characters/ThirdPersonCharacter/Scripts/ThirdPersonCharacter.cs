@@ -221,5 +221,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
+
+		public bool GroundedCheck()
+		{
+			CheckGroundStatus();
+			return m_IsGrounded;
+		}
 	}
 }
