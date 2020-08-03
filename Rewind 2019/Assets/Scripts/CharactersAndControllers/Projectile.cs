@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(transform.forward * projectileSpeed);
+        transform.Translate(transform.forward * projectileSpeed*Time.deltaTime);
         lifetimeRemaining -= Time.deltaTime;
         if (lifetimeRemaining <= 0)
         {

@@ -124,4 +124,9 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void RestartScene()
+    {
+        GoToSceneName(SceneManager.GetActiveScene().name);
+    }
 }
