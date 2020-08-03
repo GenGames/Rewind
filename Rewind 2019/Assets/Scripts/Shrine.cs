@@ -31,12 +31,7 @@ public class Shrine : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("Player"))
         {
-            print("saving");
             ActivateShrine();
-        }
-        else
-        {
-            print("in range of " + other.gameObject.name);
         }
     }
 

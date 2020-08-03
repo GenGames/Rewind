@@ -10,7 +10,6 @@ public class Projectile : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        print("I hit: " + collision.gameObject.name);
         if (collision.gameObject.GetComponent<Health>() != null)
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);

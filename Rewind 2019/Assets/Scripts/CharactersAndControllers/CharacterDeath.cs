@@ -5,6 +5,16 @@ using UnityEngine.UI;
 
 public class CharacterDeath : MonoBehaviour
 {
+    #region Singleton
+
+    public static CharacterDeath instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    #endregion
+
     private PlayData playData;
     public Camera[] cameras;
     public Text deathText;
@@ -32,8 +42,13 @@ public class CharacterDeath : MonoBehaviour
 
     public void DeathByFall()
     {
+        Death("you fell to your death...");   
+    }
+
+    public void Death(string deathMessage)
+    {
         deathScreen.SetActive(true);
-        deathText.text = "You fell to your death...";
+        deathText.text = deathMessage;
         for (int i = 0; i < cameras.Length; i++)
         {
             cameras[i].GetComponent<UnityStandardAssets.Utility.FollowTarget>().enabled = false;

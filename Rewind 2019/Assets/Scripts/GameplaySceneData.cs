@@ -16,6 +16,6 @@ public class GameplaySceneData : MonoBehaviour
     #endregion
 
     public Shrine[] shrines;
-
+    public Transform player;
 
 }

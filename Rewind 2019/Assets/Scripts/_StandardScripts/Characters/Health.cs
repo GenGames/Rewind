@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public bool onDeathAnimate;
     public string onDeathInvokeFuntion;
 
+    public bool player;
+
     public bool useHealthBar;
     private HealthBar healthBar;
 
@@ -51,6 +53,12 @@ public class Health : MonoBehaviour
         if (onDeathInvokeFuntion != "")
         {
             Invoke(onDeathInvokeFuntion,0);
+        }
+        if (player)
+        {
+            CharacterDeath.instance.Death("you were killed by an enemy");
+            CharacterDeath.instance.GetComponent<HealthBar>().HideHealthBar();
+            Time.timeScale = 0;
         }
     }
 }
