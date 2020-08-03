@@ -18,7 +18,7 @@ public class TransitionController : MonoBehaviour
     public ThirdPersonCharacter movement3d;
     public FireProjectile fireProjectile;
     public _2DCharacterController controller2d;
-
+    public GameObject gun;
     private void Start()
     {
         rigidbody = player.GetComponent<Rigidbody>();
@@ -46,6 +46,7 @@ public class TransitionController : MonoBehaviour
             fireProjectile.enabled = false;
             controller3d.inUse = false;
             rigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
+            gun.SetActive(false);
         } 
         else
         {
@@ -57,6 +58,7 @@ public class TransitionController : MonoBehaviour
             fireProjectile.enabled = true;
             controller3d.inUse = true;
             rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+            gun.SetActive(true);
         }
 
         is3d = !is3d;

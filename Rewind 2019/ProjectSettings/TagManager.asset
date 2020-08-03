@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - platform
+  - targetable
   layers:
   - Default
   - TransparentFX
