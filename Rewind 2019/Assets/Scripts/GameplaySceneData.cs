@@ -18,4 +18,6 @@ public class GameplaySceneData : MonoBehaviour
     public Shrine[] shrines;
     public Transform player;
 
+    public int levelNumber;
+
 }
