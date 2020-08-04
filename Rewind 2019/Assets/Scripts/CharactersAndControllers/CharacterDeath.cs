@@ -16,7 +16,7 @@ public class CharacterDeath : MonoBehaviour
     #endregion
 
     private PlayData playData;
-    public Camera[] cameras;
+    public UnityStandardAssets.Utility.FollowTarget cameras;
     public Text deathText;
     public GameObject deathScreen;
     public Transform player;
@@ -49,10 +49,7 @@ public class CharacterDeath : MonoBehaviour
     {
         deathScreen.SetActive(true);
         deathText.text = deathMessage;
-        for (int i = 0; i < cameras.Length; i++)
-        {
-            cameras[i].GetComponent<UnityStandardAssets.Utility.FollowTarget>().enabled = false;
-        }
+        cameras.enabled = false;
     }
 
     public void SpawnPlayer()

@@ -20,9 +20,15 @@ public class TransitionController : MonoBehaviour
     public _2DCharacterController controller2d;
     public GameObject gun;
     public GameObject wallDestoryer;
+    public GameObject healthBarUI;
+
+    public Animator cameraAnim;
+    public AnimationClip transitionAnimation;
+    public float transitionDuration;
 
     private void Start()
     {
+        transitionDuration = transitionAnimation.length;
         rigidbody = player.GetComponent<Rigidbody>();
         anim = player.GetComponent<Animator>();
         TransitionToggle();
@@ -32,44 +38,35 @@ public class TransitionController : MonoBehaviour
     {
         if (Input.GetKeyDown(initiationKey))
         {
-            TransitionToggle();
+            StartCoroutine(PlayTransitionAnimation(transitionDuration));
         }
     }
 
     public void TransitionToggle()
     {
+        camera2d.enabled = is3d;
+        controller2d.inUse = is3d;
+        wallDestoryer.SetActive(is3d);
+
+
+        movement3d.enabled = !is3d;
+        camera3d.enabled = !is3d;
+        fireProjectile.enabled = !is3d;
+        controller3d.inUse = !is3d;
+        gun.SetActive(!is3d);
+        healthBarUI.SetActive(!is3d);
         if (is3d)
         {
-            camera2d.enabled = true;
-            controller2d.inUse = true;
-            wallDestoryer.SetActive(true);
             
-
-            movement3d.enabled = false;
-            camera3d.enabled = false;
-            fireProjectile.enabled = false;
-            controller3d.inUse = false;
             rigidbody.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
-            gun.SetActive(false);
         } 
         else
         {
-            camera2d.enabled = false;
-            controller2d.inUse = false;
             wallDestoryer.GetComponent<DisableWhenTouching>().OnExitCollider();
-            wallDestoryer.SetActive(false);
-
-
-            movement3d.enabled = true;
-            camera3d.enabled = true;
-            fireProjectile.enabled = true;
-            controller3d.inUse = true;
             rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
-            gun.SetActive(true);
         }
 
         is3d = !is3d;
-        ResetCharacterDefaults();
     }
 
     public void ResetCharacterDefaults()
@@ -82,5 +79,34 @@ public class TransitionController : MonoBehaviour
         anim.SetFloat("Forward", 0);
         anim.SetFloat("Turn", 0);
         controller2d.isFacingRight = false;
+    }
+
+    public void SetAllCharacterAttributes(bool isActive)
+    {
+        controller2d.inUse = isActive;
+        wallDestoryer.SetActive(isActive);
+        movement3d.enabled = isActive;
+        camera3d.enabled = isActive;
+        fireProjectile.enabled = isActive;
+        controller3d.inUse = isActive;
+        gun.SetActive(isActive);
+        healthBarUI.SetActive(isActive);
+
+        camera2d.enabled = true;
+    }
+
+    IEnumerator PlayTransitionAnimation(float animationDuration)
+    {
+        SetAllCharacterAttributes(false);
+        cameraAnim.SetTrigger("triggerTransition");
+        rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+        ResetCharacterDefaults();
+        Time.timeScale = .2f;
+
+        yield return new WaitForSeconds(animationDuration);
+
+        Time.timeScale = 1f;
+        TransitionToggle();
+        //camera2d.GetComponent<UnityStandardAssets.Utility.FollowTarget>().enabled = true;
     }
 }

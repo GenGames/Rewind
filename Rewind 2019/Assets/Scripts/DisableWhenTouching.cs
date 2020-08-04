@@ -8,7 +8,11 @@ public class DisableWhenTouching : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("targetable") && !other.gameObject.CompareTag("interactable") && other != GetComponent<Collider>())
+        if (!other.gameObject.CompareTag("Player") 
+            && !other.gameObject.CompareTag("targetable")
+            && !other.gameObject.CompareTag("interactable") 
+            && !other.gameObject.CompareTag("platform") 
+            && other != GetComponent<Collider>())
         {
             colliders.Add(other);
             other.isTrigger = true;
@@ -21,7 +25,11 @@ public class DisableWhenTouching : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("targetable") && !other.gameObject.CompareTag("interactable")  && other != GetComponent<Collider>())
+        if (!other.gameObject.CompareTag("Player") 
+            && !other.gameObject.CompareTag("targetable")
+            && !other.gameObject.CompareTag("interactable") 
+            && !other.gameObject.CompareTag("platform") 
+            && other != GetComponent<Collider>())
         {
             colliders.Remove(other);
             other.isTrigger = false;
