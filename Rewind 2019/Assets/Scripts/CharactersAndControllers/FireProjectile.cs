@@ -6,10 +6,18 @@ public class FireProjectile : MonoBehaviour
 {
     public GameObject projectilePrefab;
     public Transform firepoint;
+    public FaceTarget weapon;
+    public float fireCooldown = .3f;
+    public bool canFire;
+
+    private void Start()
+    {
+        canFire = true;
+    }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canFire)
         {
             Shoot();
         }
@@ -18,5 +26,22 @@ public class FireProjectile : MonoBehaviour
     public void Shoot()
     {
         Instantiate(projectilePrefab, firepoint.position,firepoint.rotation);
+
+        canFire = false;
+        StartCoroutine(FireCoolDown());
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("targetable") && weapon.target == null)
+        {
+            weapon.AssignTarget(other.transform);
+        }
+    }
+
+    IEnumerator FireCoolDown()
+    {
+        yield return new WaitForSeconds(fireCooldown);
+        canFire = true;
     }
 }

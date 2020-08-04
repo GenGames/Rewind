@@ -47,4 +47,12 @@ public class HealthBar : MonoBehaviour
             }
         }
     }
+    
+    public void HideHealthBar()
+    {
+        foreach (Slider slider in healthBar)
+        {
+            slider.gameObject.SetActive(false);
+        }
+    }
 }

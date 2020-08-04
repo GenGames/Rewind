@@ -7,24 +7,34 @@ public class Projectile : MonoBehaviour
     public int damage;
     public float lifetimeRemaining;
     public float projectileSpeed;
+    public string doNotTargetTag;
+
 
     public void OnCollisionEnter(Collision collision)
     {
-        print("I hit: " + collision.gameObject.name);
-        if (collision.gameObject.GetComponent<Health>() != null)
+        if (collision.gameObject.CompareTag("targetable") && collision.gameObject.GetComponent<Health>() != null)
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 
     private void Update()
     {
-        transform.Translate(transform.forward * projectileSpeed);
+        transform.Translate(Vector3.forward * projectileSpeed*Time.deltaTime,Space.Self);
         lifetimeRemaining -= Time.deltaTime;
         if (lifetimeRemaining <= 0)
         {
             Destroy(gameObject);
         }
     }
+
+    //private void OnTriggerEnter(Collider collision)
+    //{
+    //    if (collision.gameObject.CompareTag("targetable") && collision.gameObject.GetComponent<Health>() != null)
+    //    {
+    //        Destroy(gameObject);
+    //        collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+    //    }
+    //}
 }
