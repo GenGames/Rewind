@@ -19,6 +19,8 @@ public class TransitionController : MonoBehaviour
     public FireProjectile fireProjectile;
     public _2DCharacterController controller2d;
     public GameObject gun;
+    public GameObject wallDestoryer;
+
     private void Start()
     {
         rigidbody = player.GetComponent<Rigidbody>();
@@ -40,6 +42,8 @@ public class TransitionController : MonoBehaviour
         {
             camera2d.enabled = true;
             controller2d.inUse = true;
+            wallDestoryer.SetActive(true);
+            
 
             movement3d.enabled = false;
             camera3d.enabled = false;
@@ -52,6 +56,9 @@ public class TransitionController : MonoBehaviour
         {
             camera2d.enabled = false;
             controller2d.inUse = false;
+            wallDestoryer.GetComponent<DisableWhenTouching>().OnExitCollider();
+            wallDestoryer.SetActive(false);
+
 
             movement3d.enabled = true;
             camera3d.enabled = true;

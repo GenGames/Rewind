@@ -23,7 +23,8 @@ public class PlayData : MonoBehaviour
     #endregion
 
     public int lastCheckpointIndex = -1;
-    
+    public int currentLevel = 0;
+
     private void Start()
     {
         SpawnPlayer();
