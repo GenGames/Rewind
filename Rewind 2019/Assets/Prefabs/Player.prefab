@@ -1602,6 +1602,8 @@ MonoBehaviour:
     type: 3}
   firepoint: {fileID: 845704915}
   weapon: {fileID: 420453949}
+  fireCooldown: 0.3
+  canFire: 0
 --- !u!114 &311158162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,9 +1635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a73c8ef423be342986a6dec4bc3c5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameras:
-  - {fileID: 0}
-  - {fileID: 0}
+  playerCollider: {fileID: 0}
+  cameras: {fileID: 0}
   deathText: {fileID: 0}
   deathScreen: {fileID: 0}
   player: {fileID: 408730}
@@ -1652,6 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showOnStart: 1
+  enableOnTakingDamage: 1
   healthBar:
   - {fileID: 0}
 --- !u!114 &1110147272
@@ -2982,7 +2984,7 @@ GameObject:
   - component: {fileID: 333772680}
   m_Layer: 0
   m_Name: JumpTest
-  m_TagString: Player
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

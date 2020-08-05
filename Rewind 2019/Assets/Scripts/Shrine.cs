@@ -29,7 +29,7 @@ public class Shrine : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("Player"))
+        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("interactable"))
         {
             ActivateShrine();
         }
@@ -37,7 +37,7 @@ public class Shrine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("interactable"))
         {
             interactionText.SetActive(true);
         }
@@ -45,7 +45,7 @@ public class Shrine : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("interactable"))
         {
             interactionText.SetActive(false);
         }

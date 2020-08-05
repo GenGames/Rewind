@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     public bool showOnStart;
+    public bool enableOnTakingDamage = true;
     public Slider[] healthBar;
     private int maxValue;
+    
 
     private void Start()
     {
@@ -38,7 +40,7 @@ public class HealthBar : MonoBehaviour
         {
             if (newValue <= slider.maxValue)
             {
-                if (!slider.gameObject.activeSelf)
+                if (!slider.gameObject.activeSelf && enableOnTakingDamage)
                 {
                     slider.gameObject.SetActive(true);
                 }
