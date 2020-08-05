@@ -22,6 +22,7 @@ public class CharacterDeath : MonoBehaviour
     public GameObject deathScreen;
     public Transform player;
     private bool isDead;
+    public int characterDeathHeight;
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class CharacterDeath : MonoBehaviour
             GameManager.instance.RestartScene();
         }
 
-        if (transform.position.y <= -30)
+        if (transform.position.y <= characterDeathHeight)
         {
             DeathByFall();
         }
