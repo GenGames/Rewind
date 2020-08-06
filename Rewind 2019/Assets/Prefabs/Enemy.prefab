@@ -1287,6 +1287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   isUse: 1
+  hasBeenActivated: 0
 --- !u!114 &3449358523910769216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,6 +1345,7 @@ MonoBehaviour:
   onDeathInvokeFuntion: 
   player: 0
   useHealthBar: 1
+  canTakeDamage: 1
 --- !u!114 &692109082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,6 +1381,7 @@ MonoBehaviour:
   hpBar: {fileID: 3449358522891374886}
   originPosition: {x: 0, y: 0, z: 0}
   speed: 2
+  isActivated: 1
 --- !u!1 &3449358523899955168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,5 +3943,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.209319, y: 0.99999183, z: 1.5050689}
+  m_Center: {x: 0.07806225, y: 0, z: 0}

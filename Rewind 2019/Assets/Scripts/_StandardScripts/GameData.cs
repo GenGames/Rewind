@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class GameData
 {
-    public static int totalLevels = 7;
+    public static int totalLevels = 6;
 }
 
 public enum Scene
