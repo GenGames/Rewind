@@ -11,6 +11,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
         public bool isUse = true;
+        public bool hasBeenActivated = false;
 
         private void Start()
         {
@@ -20,6 +21,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
+            GetComponent<Health>().canTakeDamage = hasBeenActivated;
         }
 
 
@@ -27,10 +29,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (isUse)
             {
-                if (target != null)
+                if (agent != null && target != null)
                     agent.SetDestination(target.position);
 
-                if (agent.remainingDistance > agent.stoppingDistance && target != null)
+                if (agent != null && agent.remainingDistance > agent.stoppingDistance && target != null)
                     character.Move((target.position - transform.position).normalized * Time.deltaTime * agent.speed, false, false);
                 else
                     character.Move(Vector3.zero, false, false);
@@ -40,6 +42,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         public void SetTarget(Transform target)
         {
+            GetComponent<Health>().canTakeDamage = hasBeenActivated;
+            hasBeenActivated = true;
+            GetComponent<Enemy2d>().isActivated = true;
             this.target = target;
             if (target == null)
             {

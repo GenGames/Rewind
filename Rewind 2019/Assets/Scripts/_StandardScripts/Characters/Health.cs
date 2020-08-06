@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     public bool useHealthBar;
     private HealthBar healthBar;
 
+    public bool canTakeDamage = true;
+
     private void Start()
     {
         if (useHealthBar && healthBar == null)
@@ -27,16 +29,19 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentValue -= damage;
-
-        if (useHealthBar)
+        if (canTakeDamage)
         {
-            healthBar.UpdateHealthBar(currentValue);
-        }
+            currentValue -= damage;
 
-        if (currentValue <= 0)
-        {
-            Death();
+            if (useHealthBar)
+            {
+                healthBar.UpdateHealthBar(currentValue);
+            }
+
+            if (currentValue <= 0)
+            {
+                Death();
+            }
         }
     }
 

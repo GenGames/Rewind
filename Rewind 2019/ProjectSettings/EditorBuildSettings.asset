@@ -12,9 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: 0b45248b4168c6c499fb8f9e822c754c
   - enabled: 1
-    path: Assets/Scenes/Tutorial/Gameplay_0.unity
+    path: Assets/Scenes/Gameplay/_Tutorial/Gameplay_0.unity
     guid: f51f36ef2ebebf841b546916e988dc11
   - enabled: 1
-    path: Assets/Scenes/Level1/Gameplay_1.unity
+    path: Assets/Scenes/Gameplay/Level1/Gameplay_1.unity
     guid: fb20c164fd2359f4589ae69715876250
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Level2/Gameplay_2.unity
+    guid: 4541d19c210b62a4e90d05dea0639513
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Level4/Gameplay_4.unity
+    guid: bff22f0581fda2c4d94d748d3eef9f03
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Level5/Gameplay_5.unity
+    guid: 5191bbb97fea2204ea8d818cbb317b96
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Level6/Gameplay_6.unity
+    guid: 20b4d59dc01cf124eb262c1e569a0fa1
+  - enabled: 1
+    path: Assets/Scenes/Gameplay/Level7/Gameplay_7.unity
+    guid: 658876a274ba8034eb52246fc6845968
   m_configObjects: {}

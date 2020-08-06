@@ -17,6 +17,7 @@ public class Enemy2d : MonoBehaviour
     private int moveMultiplier;
     private Rigidbody rigid;
     private bool isDead = false;
+    public bool isActivated = true;
 
     private void Start()
     {
@@ -31,14 +32,17 @@ public class Enemy2d : MonoBehaviour
 
     public void Initiate2d()
     {
-        isUse = true;
-        originPosition = transform.position;
-        transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
-        transform.rotation = new Quaternion(0, Mathf.CeilToInt(transform.rotation.y / 360) * 180, 0, 0);
-        hpBar.SetActive(false);
-        AIController.isUse = false;
-        enemyAttack.isUse = false;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotation;
+        if (isActivated)
+        {
+            isUse = true;
+            originPosition = transform.position;
+            transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
+            transform.rotation = new Quaternion(0, Mathf.CeilToInt(transform.rotation.y / 360) * 180, 0, 0);
+            hpBar.SetActive(false);
+            AIController.isUse = false;
+            enemyAttack.isUse = false;
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     public void Resume3d()

@@ -31,6 +31,10 @@ public class HealthBar : MonoBehaviour
             {
                 slider.gameObject.SetActive(true);
             }
+            else
+            {
+                HideHealthBar();
+            }
         }
     }
 
