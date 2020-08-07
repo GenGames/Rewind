@@ -82,6 +82,8 @@ public class CharacterDeath : MonoBehaviour
             cameras.enabled = false;
             isDead = true;
         }
+
+        PlayData.instance.numberOfDeathsThisLevel++;
     }
 
     public void KilledBy2dEnemy(float timeDelay)

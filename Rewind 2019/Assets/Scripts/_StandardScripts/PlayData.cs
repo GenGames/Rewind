@@ -24,7 +24,7 @@ public class PlayData : MonoBehaviour
 
     public int lastCheckpointIndex = -1;
     public int currentLevel = 0;
-
+    public int numberOfDeathsThisLevel;
     private void Start()
     {
         SpawnPlayer();

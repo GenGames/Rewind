@@ -1549,10 +1549,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
-  m_Height: 1.6
+  m_Radius: 0.1508914
+  m_Height: 1.5246464
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.7623232, z: 0.031783927}
 --- !u!114 &11444856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,12 +1580,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 720
   m_StationaryTurnSpeed: 360
-  m_JumpPower: 3
+  m_JumpPower: 0
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
   m_MoveSpeedMultiplier: 1.3
   m_AnimSpeedMultiplier: 1.3
   m_GroundCheckDistance: 0.3
+  footstepSounds: []
 --- !u!114 &311158161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,9 +3184,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  fovStartPoint: {fileID: 408730}
+  fovStartPoint: {fileID: 1636884729}
   lookSpeed: 1000
   maxAngle: 66
+  aimTimeout: 1
+  resetTime: 1.5
 --- !u!1 &1007465836
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,5 +3310,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.0315666, y: 5.6445956, z: 10.8879385}
-  m_Center: {x: -0.23321533, y: -0.4942286, z: 4.9439645}
+  m_Size: {x: 0.47604084, y: 3.106514, z: 10.8879385}
+  m_Center: {x: -0.019528031, y: -0.114824295, z: 4.9439645}

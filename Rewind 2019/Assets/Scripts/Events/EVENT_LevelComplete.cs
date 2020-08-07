@@ -21,6 +21,7 @@ public class EVENT_LevelComplete : EventTrigger
         if (sceneData.levelNumber == playdata.currentLevel)
         {
             playdata.currentLevel++;
+            playdata.numberOfDeathsThisLevel = 0;
             StartCoroutine(DetermineNextLevel(true));
         }
         else

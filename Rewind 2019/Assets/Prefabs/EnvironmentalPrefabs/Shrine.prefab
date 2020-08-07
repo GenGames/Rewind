@@ -257,6 +257,7 @@ MonoBehaviour:
   inactiveMaterial: {fileID: 2100002, guid: a09837bc152a9b9459581f48bee12074, type: 3}
   spawnLocation: {fileID: 8205479236785715891}
   ShrineIndex: 0
+  enemiesBehindShrine: []
 --- !u!1 &8205479237708984894
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +337,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PRESS 'E' TO CLEANSE THE SHRINE
+  m_Text: PRESS 'E' TO MEDITATE AT THE SHRINE
 --- !u!95 &8205479237708984888
 Animator:
   serializedVersion: 3
