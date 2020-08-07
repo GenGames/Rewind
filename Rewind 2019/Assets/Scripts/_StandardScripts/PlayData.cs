@@ -44,4 +44,14 @@ public class PlayData : MonoBehaviour
         }
     }
 
+    public void SpawnPlayerWithDelay(float delay)
+    {
+        StartCoroutine(Spawning(delay));
+    }
+
+    IEnumerator Spawning(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SpawnPlayer();
+    }
 }

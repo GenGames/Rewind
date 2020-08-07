@@ -23,6 +23,7 @@ public class CharacterDeath : MonoBehaviour
     public Transform player;
     private bool isDead;
     public int characterDeathHeight;
+    public float respawnDelay = .3f;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class CharacterDeath : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             GameManager.instance.RestartScene();
+            playData.SpawnPlayerWithDelay(respawnDelay);
         }
 
         if (transform.position.y <= characterDeathHeight)

@@ -1361,6 +1361,14 @@ MonoBehaviour:
   cameraAnim: {fileID: 1903771751}
   transitionAnimation: {fileID: 7400000, guid: 95f060c97e11cba4995786c66c688b15, type: 2}
   transitionDuration: 0
+  body2d: {fileID: 1665057631}
+  body3d: {fileID: 337517935}
+--- !u!1 &337517935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3045480498956039038, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665057622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &340376023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +2897,7 @@ PrefabInstance:
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}
       propertyPath: lastCheckpointIndex
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}
@@ -6088,6 +6096,10 @@ PrefabInstance:
       propertyPath: characterDeathHeight
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: respawnDelay
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: healthBar.Array.size
       value: 2
@@ -6108,6 +6120,10 @@ PrefabInstance:
       propertyPath: healthBar.Array.data[1]
       value: 
       objectReference: {fileID: 12858582}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: showOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1110147272, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: onDeathDestroy
       value: 0
@@ -6191,6 +6207,12 @@ MonoBehaviour:
 --- !u!1 &1665057630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665057622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1665057631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5878062752497488257, guid: 7737647c22c1fc64a88d5cd030c352ce,
     type: 3}
   m_PrefabInstance: {fileID: 1665057622}
   m_PrefabAsset: {fileID: 0}

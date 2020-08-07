@@ -35,6 +35,9 @@ public class TransitionController : MonoBehaviour
     public AnimationClip transitionAnimation;
     public float transitionDuration;
 
+    public GameObject body2d;
+    public GameObject body3d;
+
     private void Start()
     {
         transitionDuration = transitionAnimation.length;
@@ -122,7 +125,11 @@ public class TransitionController : MonoBehaviour
     IEnumerator PlayTransitionAnimation(float animationDuration)
     {
         is3d = !is3d;
-
+        if (is3d)
+        {
+            body3d.SetActive(true);
+            body2d.SetActive(false);
+        }
         SetAllCharacterAttributes(false);
         ToggleWallsOn();
         cameraAnim.SetTrigger("triggerTransition");
@@ -138,10 +145,15 @@ public class TransitionController : MonoBehaviour
 
         rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         ResetCharacterDefaults();
-        Time.timeScale = .2f;
+        Time.timeScale = .25f;
 
         yield return new WaitForSeconds(animationDuration);
 
+        if (!is3d)
+        {
+            body3d.SetActive(false);
+            body2d.SetActive(true);
+        }
 
         Time.timeScale = 1f;
         TransitionToggle();

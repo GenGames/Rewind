@@ -3953,6 +3953,8 @@ MonoBehaviour:
   cameraAnim: {fileID: 2066215735}
   transitionAnimation: {fileID: 7400000, guid: 95f060c97e11cba4995786c66c688b15, type: 2}
   transitionDuration: 0
+  body2d: {fileID: 1615747048}
+  body3d: {fileID: 1615747047}
 --- !u!1 &690743415
 GameObject:
   m_ObjectHideFlags: 0
@@ -10081,6 +10083,18 @@ MonoBehaviour:
 --- !u!1 &1615747046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1615747038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1615747047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3045480498956039038, guid: 7737647c22c1fc64a88d5cd030c352ce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1615747038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1615747048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5878062752497488257, guid: 7737647c22c1fc64a88d5cd030c352ce,
     type: 3}
   m_PrefabInstance: {fileID: 1615747038}
   m_PrefabAsset: {fileID: 0}
