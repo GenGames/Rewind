@@ -29,11 +29,10 @@ public class FaceTarget : MonoBehaviour
                 Quaternion lookAt = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * lookSpeed);
                 transform.rotation = lookAt;
             }
-            else
-            {
-                target = null;
-                transform.rotation = new Quaternion(0, 0, 0, 0);
-            }
+        }
+        else
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
         }
     }
 

@@ -14,6 +14,7 @@ public class EnemyAttack : MonoBehaviour
 
     public float range = 1;
     public int damage = 1;
+    public bool isUse;
 
     private void Start()
     {
@@ -23,13 +24,18 @@ public class EnemyAttack : MonoBehaviour
 
     public void SetTarget(Transform target)
     {
+        if (characterController == null)
+        {
+            characterController = GetComponent<AICharacterControl>();
+        }
+
         myTarget = target;
         characterController.SetTarget(target);
     }
 
     private void Update()
     {
-        if (myTarget != null)
+        if (myTarget != null && isUse)
         {
             if ((transform.position - myTarget.position).sqrMagnitude <= range * range && canAttack)
             {

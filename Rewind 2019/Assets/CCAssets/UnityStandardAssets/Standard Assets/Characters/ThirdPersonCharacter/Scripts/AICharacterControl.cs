@@ -10,7 +10,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         public UnityEngine.AI.NavMeshAgent agent { get; private set; }             // the navmesh agent required for the path finding
         public ThirdPersonCharacter character { get; private set; } // the character we are controlling
         public Transform target;                                    // target to aim for
-
+        public bool isUse = true;
+        public bool hasBeenActivated = false;
 
         private void Start()
         {
@@ -20,23 +21,30 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 	        agent.updateRotation = false;
 	        agent.updatePosition = true;
+            GetComponent<Health>().canTakeDamage = hasBeenActivated;
         }
 
 
         private void Update()
         {
-            if (target != null)
-                agent.SetDestination(target.position);
+            if (isUse)
+            {
+                if (agent != null && target != null)
+                    agent.SetDestination(target.position);
 
-            if (agent.remainingDistance > agent.stoppingDistance)
-                character.Move(agent.desiredVelocity, false, false);
-            else
-                character.Move(Vector3.zero, false, false);
+                if (agent != null && agent.remainingDistance > agent.stoppingDistance && target != null)
+                    character.Move((target.position - transform.position).normalized * Time.deltaTime * agent.speed, false, false);
+                else
+                    character.Move(Vector3.zero, false, false);
+            }
         }
 
 
         public void SetTarget(Transform target)
         {
+            GetComponent<Health>().canTakeDamage = hasBeenActivated;
+            hasBeenActivated = true;
+            GetComponent<Enemy2d>().isActivated = true;
             this.target = target;
             if (target == null)
             {

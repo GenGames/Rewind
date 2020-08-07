@@ -10,7 +10,7 @@ public class TitleMenuManager : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            GameManager.instance.GoToScene(Scene.Gameplay);
+            GameManager.instance.GoToSceneName("LevelSelection");
         }
     }
 }

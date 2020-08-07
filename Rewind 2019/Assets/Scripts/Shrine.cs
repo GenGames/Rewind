@@ -14,6 +14,8 @@ public class Shrine : MonoBehaviour
     public Transform spawnLocation;
     public int ShrineIndex;
 
+    public GameObject[] enemiesBehindShrine;
+
     private void Start()
     {
         playData = PlayData.instance;
@@ -29,7 +31,7 @@ public class Shrine : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("Player"))
+        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.CompareTag("interactable"))
         {
             ActivateShrine();
         }
@@ -37,7 +39,7 @@ public class Shrine : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("interactable"))
         {
             interactionText.SetActive(true);
         }
@@ -45,7 +47,7 @@ public class Shrine : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("interactable"))
         {
             interactionText.SetActive(false);
         }
@@ -73,5 +75,10 @@ public class Shrine : MonoBehaviour
     {
         Transform player = UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl.instance.transform;
         player.position = spawnLocation.position;
+        foreach (GameObject gameObject in enemiesBehindShrine)
+        {
+            Destroy(gameObject);
+        }
+        GetComponent<Renderer>().material = activeMaterial;
     }
 }

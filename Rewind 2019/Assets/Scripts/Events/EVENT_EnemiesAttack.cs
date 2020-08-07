@@ -17,7 +17,10 @@ public class EVENT_EnemiesAttack : EventTrigger
     {
         foreach (EnemyAttack enemy in enemies)
         {
-            enemy.SetTarget(player);
+            if (enemy != null)
+            {
+                enemy.SetTarget(player);
+            }
         }
     }
 }

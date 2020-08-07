@@ -16,15 +16,19 @@ public class CharacterDeath : MonoBehaviour
     #endregion
 
     private PlayData playData;
-    public Camera[] cameras;
+    public Collider playerCollider;
+    public UnityStandardAssets.Utility.FollowTarget cameras;
     public Text deathText;
     public GameObject deathScreen;
     public Transform player;
+    private bool isDead;
+    public int characterDeathHeight;
 
     private void Start()
     {
         playData = PlayData.instance;
         SpawnPlayer();
+        isDead = false;
     }
 
     private void Update()
@@ -34,7 +38,7 @@ public class CharacterDeath : MonoBehaviour
             GameManager.instance.RestartScene();
         }
 
-        if (transform.position.y <= -30)
+        if (transform.position.y <= characterDeathHeight)
         {
             DeathByFall();
         }
@@ -47,12 +51,20 @@ public class CharacterDeath : MonoBehaviour
 
     public void Death(string deathMessage)
     {
-        deathScreen.SetActive(true);
-        deathText.text = deathMessage;
-        for (int i = 0; i < cameras.Length; i++)
+        if (!isDead)
         {
-            cameras[i].GetComponent<UnityStandardAssets.Utility.FollowTarget>().enabled = false;
+            deathScreen.SetActive(true);
+            deathText.text = deathMessage;
+            cameras.enabled = false;
+            isDead = true;
         }
+    }
+
+    public void KilledBy2dEnemy(float timeDelay)
+    {
+        GetComponent<Rigidbody>().velocity = new Vector3(0, 15, 0);
+        playerCollider.enabled = false;
+        StartCoroutine(InitiateDeath(timeDelay, "You were Killed by the forces of corruption"));
     }
 
     public void SpawnPlayer()
@@ -61,5 +73,11 @@ public class CharacterDeath : MonoBehaviour
         {
             transform.position = GameplaySceneData.instance.shrines[playData.lastCheckpointIndex].spawnLocation.position;
         }
+    }
+
+    IEnumerator InitiateDeath(float timeDelay, string deathMessage)
+    {
+        yield return new WaitForSeconds(timeDelay);
+        Death(deathMessage);
     }
 }
