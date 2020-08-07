@@ -61,7 +61,7 @@ public class Health : MonoBehaviour
         }
         if (player)
         {
-            CharacterDeath.instance.Death("you were killed by an enemy");
+            CharacterDeath.instance.Death("You were Killed by the forces of corruption");
             CharacterDeath.instance.GetComponent<HealthBar>().HideHealthBar();
             Time.timeScale = 0;
         }
