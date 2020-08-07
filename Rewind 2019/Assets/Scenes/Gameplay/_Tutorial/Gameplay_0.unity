@@ -9659,6 +9659,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 409158449}
   offset: {x: 0, y: 0, z: 0}
+--- !u!1 &1520708409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1180203619, guid: a1861a944cbed87448256b415a2ecdca,
+    type: 3}
+  m_PrefabInstance: {fileID: 198442644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1546998310
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,6 +12348,11 @@ PrefabInstance:
       propertyPath: objectTrigger
       value: 
       objectReference: {fileID: 800311512}
+    - target: {fileID: 5892422840411653955, guid: f98d7f18b7896414d91e20cba37d10bc,
+        type: 3}
+      propertyPath: soundRangeSquared
+      value: 16
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f98d7f18b7896414d91e20cba37d10bc, type: 3}
 --- !u!1 &8268008217780111828
@@ -12391,7 +12402,7 @@ MonoBehaviour:
   eventTriggerTag: Player
   eventTriggerObject: {fileID: 0}
   delayTime: 3
-  YouWonUI: {fileID: 0}
+  YouWonUI: {fileID: 1520708409}
 --- !u!65 &8268008217780111835
 BoxCollider:
   m_ObjectHideFlags: 0
