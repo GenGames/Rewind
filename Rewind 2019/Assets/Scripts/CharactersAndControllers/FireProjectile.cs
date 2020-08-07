@@ -31,7 +31,7 @@ public class FireProjectile : MonoBehaviour
         StartCoroutine(FireCoolDown());
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("targetable") && weapon.target == null)
         {

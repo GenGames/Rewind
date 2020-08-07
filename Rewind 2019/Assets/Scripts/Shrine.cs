@@ -14,6 +14,8 @@ public class Shrine : MonoBehaviour
     public Transform spawnLocation;
     public int ShrineIndex;
 
+    public GameObject[] enemiesBehindShrine;
+
     private void Start()
     {
         playData = PlayData.instance;
@@ -73,5 +75,10 @@ public class Shrine : MonoBehaviour
     {
         Transform player = UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl.instance.transform;
         player.position = spawnLocation.position;
+        foreach (GameObject gameObject in enemiesBehindShrine)
+        {
+            Destroy(gameObject);
+        }
+        GetComponent<Renderer>().material = activeMaterial;
     }
 }

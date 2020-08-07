@@ -32,11 +32,14 @@ public class PlayData : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        for (int i = 0; i < GameplaySceneData.instance.shrines.Length; i++)
+        if (GameplaySceneData.instance != null)
         {
-            if (i == lastCheckpointIndex)
+            for (int i = 0; i < GameplaySceneData.instance.shrines.Length; i++)
             {
-                GameplaySceneData.instance.shrines[i].SpawnPlayerAtShrine();
+                if (i == lastCheckpointIndex)
+                {
+                    GameplaySceneData.instance.shrines[i].SpawnPlayerAtShrine();
+                }
             }
         }
     }

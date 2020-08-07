@@ -483,7 +483,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1876554}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1876558}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 039c6fbca0c9cdd44819959b4bb8d8ec, type: 3}
@@ -495,12 +495,18 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1876554}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1876558}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa209683bc4219f4190554c761eb8b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1876558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3449358523899955054, guid: 4f0677961bdf2c142ad28b748cf5daad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1876554}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8260280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2461,8 +2467,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351698794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.898, y: 4.64, z: -45.088}
-  m_LocalScale: {x: 9.128264, y: 0.16404435, z: 27.860147}
+  m_LocalPosition: {x: 4.307, y: 4.64, z: -45.088}
+  m_LocalScale: {x: 4.308541, y: 0.16404435, z: 27.860147}
   m_Children: []
   m_Father: {fileID: 1758824426}
   m_RootOrder: 7
@@ -4943,7 +4949,7 @@ PrefabInstance:
     - target: {fileID: 8205479237419233169, guid: 8b91b5376d3603b468cb9170d641f864,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.91
+      value: 33.2
       objectReference: {fileID: 0}
     - target: {fileID: 8205479237419233169, guid: 8b91b5376d3603b468cb9170d641f864,
         type: 3}
@@ -4997,9 +5003,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8205479237419233168, guid: 8b91b5376d3603b468cb9170d641f864,
         type: 3}
+      propertyPath: enemiesBehindShrine.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8205479237419233168, guid: 8b91b5376d3603b468cb9170d641f864,
+        type: 3}
       propertyPath: ShrineIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8205479237419233168, guid: 8b91b5376d3603b468cb9170d641f864,
+        type: 3}
+      propertyPath: enemiesBehindShrine.Array.data[0]
+      value: 
+      objectReference: {fileID: 1876558}
+    - target: {fileID: 8205479237419233168, guid: 8b91b5376d3603b468cb9170d641f864,
+        type: 3}
+      propertyPath: enemiesBehindShrine.Array.data[1]
+      value: 
+      objectReference: {fileID: 1517741889}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b91b5376d3603b468cb9170d641f864, type: 3}
 --- !u!4 &864383808 stripped
@@ -6388,13 +6409,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150918447}
-  m_LocalRotation: {x: 0.37940946, y: 0.12059045, z: -0.04995019, w: 0.9159757}
-  m_LocalPosition: {x: -1.816894, y: 7.448116, z: -5.88}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 7.448116, z: -5.88}
   m_LocalScale: {x: 1.0020828, y: 1.0082966, z: 1.0082971}
   m_Children: []
   m_Father: {fileID: 2066215734}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 45, y: 15, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &1150918449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8008,7 +8029,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1517741885}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1517741889}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 039c6fbca0c9cdd44819959b4bb8d8ec, type: 3}
@@ -8020,12 +8041,18 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1517741885}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1517741889}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa209683bc4219f4190554c761eb8b79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1517741889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3449358523899955054, guid: 4f0677961bdf2c142ad28b748cf5daad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1517741885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1524625076
 GameObject:
   m_ObjectHideFlags: 0
@@ -12221,8 +12248,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051604484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.059, y: 6.847, z: -57}
-  m_LocalScale: {x: 9.439137, y: 3.256627, z: 20.74471}
+  m_LocalPosition: {x: 2.059, y: 6.55, z: -57}
+  m_LocalScale: {x: 9.439137, y: 3.8519058, z: 20.74471}
   m_Children: []
   m_Father: {fileID: 1758824426}
   m_RootOrder: 8

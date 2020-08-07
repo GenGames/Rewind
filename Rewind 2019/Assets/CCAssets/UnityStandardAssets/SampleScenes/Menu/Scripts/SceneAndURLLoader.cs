@@ -6,8 +6,15 @@ public class SceneAndURLLoader : MonoBehaviour
 {
     private PauseMenu m_PauseMenu;
 
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			SceneLoad("MainMenu");
+		}
+	}
 
-    private void Awake ()
+	private void Awake ()
     {
         m_PauseMenu = GetComponentInChildren <PauseMenu> ();
     }
