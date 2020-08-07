@@ -1983,6 +1983,10 @@ PrefabInstance:
       propertyPath: deathScreen
       value: 
       objectReference: {fileID: 1547608461}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: characterDeathHeight
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: healthBar.Array.size
       value: 2
