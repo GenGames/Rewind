@@ -12,7 +12,7 @@ public class SFXArea : MonoBehaviour
     public GameObject objectTrigger;
 
     [Range(0.1f, 10000000f)]
-    public float soundRangeSquareRoot = 1;
+    public float soundRangeSquared = 1;
 
     public bool stopOnExit;
 
@@ -42,7 +42,7 @@ public class SFXArea : MonoBehaviour
         {
             if (source != null)
             {
-                source.volume = 1f / (((other.transform.position - transform.position).sqrMagnitude)/ soundRangeSquareRoot);
+                source.volume = 1f / (((other.transform.position - transform.position).sqrMagnitude)/ soundRangeSquared);
             }
         }
     }
