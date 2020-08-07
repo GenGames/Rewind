@@ -61,6 +61,10 @@ public class _2DCharacterController : MonoBehaviour
     {
         if (GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter>().GroundedCheck())
         {
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.Play("JumpSfx2D");
+            }
             m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
         }
     }

@@ -43,4 +43,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff926983cde32a4aad1a9e8988d71e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: 2DMonsterDeath
+    sound: {fileID: 8300000, guid: 6cd6ce3e19b87c54da48f6eb996d1ed7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 2DPlayerDeath
+    sound: {fileID: 8300000, guid: a478c4916abaeb644931bd0cf7094508, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DMonsterDeath
+    sound: {fileID: 8300000, guid: 41d4f53fb167d2f4bb41c5a7c42131a4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DPlayerDeath1
+    sound: {fileID: 8300000, guid: 05544a598fa0b8d4e9e8b3ee9f0fdace, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DPlayerDeath2
+    sound: {fileID: 8300000, guid: aadf9dfd720151a42ae14dd13135f3fa, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DPlayerDeath3
+    sound: {fileID: 8300000, guid: 65e4f01a27145be4482ab638779901f3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DPlayerDeath4
+    sound: {fileID: 8300000, guid: 2cc9a1f0a059cf1429835d8694febb64, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: GolemHit
+    sound: {fileID: 8300000, guid: a18d7cb20967fc2498573d8c9f0a7dcc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: Intro2D
+    sound: {fileID: 8300000, guid: 8ab70982d7af4f24e9c401f40ee439b3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: JumpSfx2D
+    sound: {fileID: 8300000, guid: cc1d26963e0990048b407aad731a2203, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: Out2D
+    sound: {fileID: 8300000, guid: 5b516eec0675cc3448bded4d37fba5ce, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: PistolShot1
+    sound: {fileID: 8300000, guid: a75927cd4925b8d468b06284a29660bc, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: PistolShot2
+    sound: {fileID: 8300000, guid: 847d3b19253ea6447b3e30778933ff12, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: PistolShot3
+    sound: {fileID: 8300000, guid: 7dc11bd4dfe415f4db9fd90b054a3e0f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: StoneFootstep1
+    sound: {fileID: 8300000, guid: 03cd47102fedb054d8ab41429da9254b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: StoneFootstep2
+    sound: {fileID: 8300000, guid: 120e3662c1e2d82419dbaade88996595, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: Waterfall
+    sound: {fileID: 8300000, guid: d27c9f6d08bcff44f8006261d3c39995, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}

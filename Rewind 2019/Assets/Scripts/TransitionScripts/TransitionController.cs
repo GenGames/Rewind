@@ -6,6 +6,14 @@ using UnityStandardAssets._2D;
 
 public class TransitionController : MonoBehaviour
 {
+    #region Singelton
+    public static TransitionController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
     public KeyCode initiationKey = KeyCode.Q;
     public bool is3d;
     public Transform player;
@@ -49,6 +57,7 @@ public class TransitionController : MonoBehaviour
         {
             wallCheck2d.GetComponent<DisableWhenTouching>().OnExitCollider();
             rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+            
         }
         else
         {
@@ -117,6 +126,15 @@ public class TransitionController : MonoBehaviour
         SetAllCharacterAttributes(false);
         ToggleWallsOn();
         cameraAnim.SetTrigger("triggerTransition");
+
+        if (AudioManager.instance != null && is3d)
+        {
+            AudioManager.instance.Play("Intro2D");
+        }
+        else if (AudioManager.instance != null && !is3d)
+        {
+            AudioManager.instance.Play("Out2D");
+        }
 
         rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         ResetCharacterDefaults();

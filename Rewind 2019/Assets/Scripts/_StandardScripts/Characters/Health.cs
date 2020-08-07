@@ -18,6 +18,9 @@ public class Health : MonoBehaviour
 
     public bool canTakeDamage = true;
 
+    public string[] deathSFX;
+    public string[] hitSFX;
+
     private void Start()
     {
         if (useHealthBar && healthBar == null)
@@ -31,6 +34,15 @@ public class Health : MonoBehaviour
     {
         if (canTakeDamage)
         {
+            if (AudioManager.instance != null && hitSFX.Length > 0)
+            {
+                int sfxToPlay = Random.Range(0, hitSFX.Length - 1);
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.Play(hitSFX[sfxToPlay]);
+                }
+            }
+
             currentValue -= damage;
 
             if (useHealthBar)
@@ -47,6 +59,15 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
+        if (AudioManager.instance != null && deathSFX.Length > 0)
+        {
+            int sfxToPlay = Random.Range(0, deathSFX.Length - 1);
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.Play(deathSFX[sfxToPlay]);
+            }
+        }
+
         if (onDeathDestroy)
         {
             Destroy(gameObject, destructionDelay);

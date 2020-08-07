@@ -116,7 +116,7 @@ public class Enemy2d : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //print("hit trigger");
-        if (isUse && other.gameObject.CompareTag("Player"))
+        if (isUse && other.gameObject.CompareTag("Player") && other.GetComponent<Rigidbody>().velocity.y < 0)
         {
             Rigidbody player = other.GetComponent<Rigidbody>();
             player.velocity = new Vector3(player.velocity.x, 15, player.velocity.z);
@@ -127,6 +127,10 @@ public class Enemy2d : MonoBehaviour
 
     public void Death()
     {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.Play("2DMonsterDeath");
+        }
         Destroy(gameObject);
     }
 }

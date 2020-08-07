@@ -12,6 +12,9 @@ public class FaceTarget : MonoBehaviour
     private Quaternion targetRotation;
     private Quaternion lookAt;
 
+    public bool aimTimeout = true;
+    public float resetTime;
+
     public void AssignTarget(Transform newTarget)
     {
         target = newTarget;
@@ -29,8 +32,12 @@ public class FaceTarget : MonoBehaviour
                 Quaternion lookAt = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * lookSpeed);
                 transform.rotation = lookAt;
             }
+            if (aimTimeout)
+            {
+                StartCoroutine(TimeoutAim());
+            }
         }
-        else
+        if (target == null)
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
         }
@@ -49,5 +56,11 @@ public class FaceTarget : MonoBehaviour
         {
             return false;
         }
+    }
+
+    IEnumerator TimeoutAim()
+    {
+        yield return new WaitForSecondsRealtime(resetTime);
+        target = null;
     }
 }

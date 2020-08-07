@@ -46,7 +46,31 @@ public class CharacterDeath : MonoBehaviour
 
     public void DeathByFall()
     {
-        Death("you fell to your death...");   
+
+        if (!isDead)
+        {
+            if (TransitionController.instance.is3d)
+            {
+                string[] deathSFX = GetComponent<Health>().deathSFX;
+
+                if (AudioManager.instance != null && deathSFX.Length > 0)
+                {
+                    int sfxToPlay = Random.Range(0, deathSFX.Length - 1);
+                    if (AudioManager.instance != null)
+                    {
+                        AudioManager.instance.Play(deathSFX[sfxToPlay]);
+                    }
+                }
+            }
+            else
+            {
+                if (AudioManager.instance != null)
+                {
+                    AudioManager.instance.Play("2DPlayerDeath");
+                }
+            }
+            Death("you fell to your death...");
+        }
     }
 
     public void Death(string deathMessage)
@@ -58,10 +82,17 @@ public class CharacterDeath : MonoBehaviour
             cameras.enabled = false;
             isDead = true;
         }
+
+        PlayData.instance.numberOfDeathsThisLevel++;
     }
 
     public void KilledBy2dEnemy(float timeDelay)
     {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.Play("2DPlayerDeath");
+        }
+
         GetComponent<Rigidbody>().velocity = new Vector3(0, 15, 0);
         playerCollider.enabled = false;
         StartCoroutine(InitiateDeath(timeDelay, "You were Killed by the forces of corruption"));

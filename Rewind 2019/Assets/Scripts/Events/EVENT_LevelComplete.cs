@@ -21,6 +21,7 @@ public class EVENT_LevelComplete : EventTrigger
         if (sceneData.levelNumber == playdata.currentLevel)
         {
             playdata.currentLevel++;
+            playdata.numberOfDeathsThisLevel = 0;
             StartCoroutine(DetermineNextLevel(true));
         }
         else
@@ -40,7 +41,7 @@ public class EVENT_LevelComplete : EventTrigger
         Time.timeScale = 1f;
         YouWonUI.SetActive(false);
 
-        if (PlayData.instance.currentLevel  >= 6)
+        if (PlayData.instance.currentLevel  > 6)
         {
             GameManager.instance.GoToSceneName("Credits");
         }

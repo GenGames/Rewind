@@ -29,13 +29,28 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (isUse)
             {
-                if (agent != null && target != null)
+                float disanceFromTargetSquared = 0;
+
+                if (target != null)
+                {
+                    disanceFromTargetSquared = (target.position - transform.position).sqrMagnitude;
+                }
+
+                if (agent != null && disanceFromTargetSquared > agent.stoppingDistance * agent.stoppingDistance)
+                {
                     agent.SetDestination(target.position);
+                }
 
                 if (agent != null && agent.remainingDistance > agent.stoppingDistance && target != null)
+                {
                     character.Move((target.position - transform.position).normalized * Time.deltaTime * agent.speed, false, false);
-                else
+
+                }
+                else 
+                {
+                    
                     character.Move(Vector3.zero, false, false);
+                }
             }
         }
 
@@ -46,10 +61,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             hasBeenActivated = true;
             GetComponent<Enemy2d>().isActivated = true;
             this.target = target;
-            if (target == null)
-            {
-                agent.isStopped = true;
-            }
+            //if (target == null)
+            //{
+            //    agent.isStopped = true;
+            //}
         }
     }
 }

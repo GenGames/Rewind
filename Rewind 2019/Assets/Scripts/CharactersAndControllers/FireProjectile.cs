@@ -9,6 +9,7 @@ public class FireProjectile : MonoBehaviour
     public FaceTarget weapon;
     public float fireCooldown = .3f;
     public bool canFire;
+    public string[] fireSound;
 
     private void Start()
     {
@@ -25,6 +26,15 @@ public class FireProjectile : MonoBehaviour
 
     public void Shoot()
     {
+        if (AudioManager.instance != null && fireSound.Length > 0)
+        {
+            int sfxToPlay = Random.Range(0, fireSound.Length - 1);
+            if (AudioManager.instance != null)
+            {
+                AudioManager.instance.Play(fireSound[sfxToPlay]);
+            }
+        }
+
         Instantiate(projectilePrefab, firepoint.position,firepoint.rotation);
 
         canFire = false;
