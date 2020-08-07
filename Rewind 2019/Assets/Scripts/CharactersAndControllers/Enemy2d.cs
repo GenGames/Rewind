@@ -127,6 +127,10 @@ public class Enemy2d : MonoBehaviour
 
     public void Death()
     {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.Play("2DMonsterDeath");
+        }
         Destroy(gameObject);
     }
 }

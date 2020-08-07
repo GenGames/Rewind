@@ -29,6 +29,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
+		int currentStepCounter;
+		public string[] footstepSounds;
 
 		void Start()
 		{
@@ -136,6 +138,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			float jumpLeg = (runCycle < k_Half ? 1 : -1) * m_ForwardAmount;
 			if (m_IsGrounded)
 			{
+				if (AudioManager.instance != null)
+				{
+					if (Mathf.CeilToInt(jumpLeg) != currentStepCounter)
+					{
+						int sfxToPlay = Random.Range(0, footstepSounds.Length - 1);
+						if (footstepSounds.Length < 0)
+						{
+							AudioManager.instance.Play(footstepSounds[sfxToPlay]);
+						}
+					}
+
+					currentStepCounter = Mathf.CeilToInt(jumpLeg);
+				}
+
 				m_Animator.SetFloat("JumpLeg", jumpLeg);
 			}
 

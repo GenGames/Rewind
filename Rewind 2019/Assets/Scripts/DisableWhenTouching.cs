@@ -40,7 +40,7 @@ public class DisableWhenTouching : MonoBehaviour
             Wall anotherWall = new Wall();
             foreach (Wall wall in walls)
             {
-                if (wall.collider == other)
+                if ( other != null && wall.collider == other)
                 {
                     wall.ResetWall();
                     anotherWall = wall;
@@ -58,7 +58,10 @@ public class DisableWhenTouching : MonoBehaviour
     {
         foreach (Wall wall in walls)
         {
-            wall.ResetWall();
+            if (wall.collider != null)
+            {
+                wall.ResetWall();
+            }
         }
         walls.Clear();
     }
@@ -96,6 +99,7 @@ public struct Wall{
 
     public void ResetWall()
     {
+        //Debug.Log("ResetingWallFor: " + collider.gameObject.name);
         if (collider.GetComponent<Renderer>() != null)
         {
             collider.GetComponent<Renderer>().material = originMaterial;

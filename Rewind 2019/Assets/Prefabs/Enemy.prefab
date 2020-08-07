@@ -1346,6 +1346,10 @@ MonoBehaviour:
   player: 0
   useHealthBar: 1
   canTakeDamage: 1
+  deathSFX:
+  - 3DMonsterDeath
+  hitSFX:
+  - GolemHit
 --- !u!114 &692109082
 MonoBehaviour:
   m_ObjectHideFlags: 0
