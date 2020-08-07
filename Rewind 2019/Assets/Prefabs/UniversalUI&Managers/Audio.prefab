@@ -180,3 +180,36 @@ MonoBehaviour:
     audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
       type: 2}
     source: {fileID: 0}
+  - name: 2DMusic
+    sound: {fileID: 8300000, guid: 43693a5720e509249a27fbc9b683d2ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 8720610249395585508, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: Music3D
+    sound: {fileID: 8300000, guid: bcf8b4de9b5b1754fac250a9b0f5aad1, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 8720610249395585508, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: MainMenuMusic
+    sound: {fileID: 8300000, guid: 2a1d0bb5a77e4334f9abb3a9727b3ffb, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    audioMixerGroup: {fileID: 8720610249395585508, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: CharacterDamaged
+    sound: {fileID: 8300000, guid: 2d6fe91556b63cd49ba5cd824978a390, type: 3}
+    volume: 0.62
+    pitch: 1
+    loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  sources: []

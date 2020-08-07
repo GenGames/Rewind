@@ -5053,6 +5053,8 @@ MonoBehaviour:
   cameraAnim: {fileID: 1250820919}
   transitionAnimation: {fileID: 7400000, guid: 95f060c97e11cba4995786c66c688b15, type: 2}
   transitionDuration: 0
+  body2d: {fileID: 0}
+  body3d: {fileID: 0}
 --- !u!1 &674812129
 GameObject:
   m_ObjectHideFlags: 0

@@ -1625,7 +1625,10 @@ MonoBehaviour:
   weapon: {fileID: 420453949}
   fireCooldown: 0.3
   canFire: 0
-  fireSound: []
+  fireSound:
+  - PistolShot1
+  - PistolShot2
+  - PistolShot3
 --- !u!114 &311158162
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -26,16 +26,27 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name != "ArenaScene" && AudioManager.instance != null)
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "LevelSelection")
         {
-            AudioManager.instance.Play("MenuMusic");
-            AudioManager.instance.Stop("ArenaMusic");
+            if (!AudioManager.instance.IsPlaying("MainMenuMusic"))
+            {
+                AudioManager.instance.Play("MainMenuMusic");
+            }
+            if (AudioManager.instance.IsPlaying("2DMusic"))
+            {
+                AudioManager.instance.Stop("2DMusic");
+            }
+            if (AudioManager.instance.IsPlaying("Music3D"))
+            {
+                AudioManager.instance.Stop("Music3D");
+            }
 
         }
-        else if (AudioManager.instance != null)
+        else
         {
-            AudioManager.instance.Stop("MenuMusic");
-            AudioManager.instance.Play("ArenaMusic");
+            AudioManager.instance.Stop("MainMenuMusic");
+            AudioManager.instance.Stop("2DMusic");
+            AudioManager.instance.Play("Music3D");
         }
 
         playData = PlayData.instance;
