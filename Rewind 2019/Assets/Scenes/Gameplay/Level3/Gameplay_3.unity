@@ -21350,7 +21350,7 @@ PrefabInstance:
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}
       propertyPath: lastCheckpointIndex
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}
