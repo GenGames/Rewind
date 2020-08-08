@@ -44,6 +44,11 @@ public class TransitionController : MonoBehaviour
         rigidbody = player.GetComponent<Rigidbody>();
         anim = player.GetComponent<Animator>();
         TransitionToggle();
+        AudioManager.instance.GetSource("Music3D").volume = .25f;
+        AudioManager.instance.GetSource("3DAmbiance").volume = 1f;
+        AudioManager.instance.GetSource("2DMusic").volume = 0f;
+
+        AudioManager.instance.Play("3DAmbiance");
     }
 
     private void Update()
@@ -158,7 +163,8 @@ public class TransitionController : MonoBehaviour
         }
         else
         {
-            AudioManager.instance.GetSource("Music3D").volume = .5f;
+            AudioManager.instance.GetSource("Music3D").volume = .25f;
+            AudioManager.instance.GetSource("3DAmbiance").volume = 1f;
             AudioManager.instance.GetSource("2DMusic").volume = 0f;
         }
 

@@ -5290,7 +5290,7 @@ PrefabInstance:
     - target: {fileID: 2991394181710962704, guid: a1861a944cbed87448256b415a2ecdca,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.024993896
+      value: -0.025024414
       objectReference: {fileID: 0}
     - target: {fileID: 3729156806493590538, guid: a1861a944cbed87448256b415a2ecdca,
         type: 3}
@@ -5742,7 +5742,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0391741, y: 0.5900005, z: 9.889923}
+  m_Size: {x: 3, y: 0.5900005, z: 9.889923}
   m_Center: {x: 0.008694486, y: 0.32158613, z: 3.8091755}
 --- !u!1 &1264179143
 GameObject:
@@ -8456,7 +8456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: enableOnTakingDamage
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: healthBar.Array.data[1]
@@ -10341,7 +10341,7 @@ PrefabInstance:
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}
       propertyPath: lastCheckpointIndex
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7277830380983479613, guid: 96ad86a0c340ea04794290733da2a845,
         type: 3}

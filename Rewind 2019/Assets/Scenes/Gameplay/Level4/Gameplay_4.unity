@@ -1107,7 +1107,7 @@ PrefabInstance:
     - target: {fileID: 3053064049389827811, guid: dbceba47ec07b5146a0df1e387038814,
         type: 3}
       propertyPath: sounds.Array.data[18].volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbceba47ec07b5146a0df1e387038814, type: 3}
@@ -5215,7 +5215,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0391741, y: 0.5900005, z: 9.889923}
+  m_Size: {x: 3, y: 0.5900005, z: 9.889923}
   m_Center: {x: 0.008694486, y: 0.32158613, z: 3.8091755}
 --- !u!1 &1006262486
 GameObject:

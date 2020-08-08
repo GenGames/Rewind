@@ -190,7 +190,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Music3D
     sound: {fileID: 8300000, guid: bcf8b4de9b5b1754fac250a9b0f5aad1, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 1
     audioMixerGroup: {fileID: 8720610249395585508, guid: 886129288d2ef5846a1ca46f0ddaed27,
@@ -209,6 +209,14 @@ MonoBehaviour:
     volume: 0.62
     pitch: 1
     loop: 0
+    audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
+      type: 2}
+    source: {fileID: 0}
+  - name: 3DAmbiance
+    sound: {fileID: 8300000, guid: 4a5c1311f4d764b448d00658ee349c79, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     audioMixerGroup: {fileID: 6201889765402771512, guid: 886129288d2ef5846a1ca46f0ddaed27,
       type: 2}
     source: {fileID: 0}
