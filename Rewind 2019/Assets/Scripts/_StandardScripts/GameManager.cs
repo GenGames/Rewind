@@ -45,8 +45,16 @@ public class GameManager : MonoBehaviour
         else
         {
             AudioManager.instance.Stop("MainMenuMusic");
-            AudioManager.instance.Stop("2DMusic");
-            AudioManager.instance.Play("Music3D");
+
+            if (!AudioManager.instance.IsPlaying("2DMusic"))
+            {
+                AudioManager.instance.Play("2DMusic");
+                AudioManager.instance.GetSource("2DMusic").volume = 0f;
+            }
+            if (!AudioManager.instance.IsPlaying("Music3D"))
+            {
+                AudioManager.instance.Play("Music3D");
+            }
         }
 
         playData = PlayData.instance;

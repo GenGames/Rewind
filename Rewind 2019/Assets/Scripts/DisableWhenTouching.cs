@@ -21,10 +21,7 @@ public class DisableWhenTouching : MonoBehaviour
 
             walls.Add(new Wall(other));
 
-            if (other.GetComponent<Renderer>() != null)
-            {
-                other.GetComponent<Renderer>().material = inactiveMaterial;
-            }
+            ReplaceAllMaterials(other.gameObject, inactiveMaterial);
         }
     }
 
@@ -65,6 +62,22 @@ public class DisableWhenTouching : MonoBehaviour
         }
         walls.Clear();
     }
+
+    public void ReplaceAllMaterials(GameObject targetObject, Material newMaterial)
+    {
+        Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer renderer in renderers)
+        {
+            Material[] newMats = new Material[renderer.materials.Length];
+            for (int i = 0; i < newMats.Length; i++)
+            {
+                newMats[i] = newMaterial;
+            }
+
+            renderer.materials = newMats;
+        }
+    }
 }
 
 [System.Serializable]
@@ -99,10 +112,30 @@ public struct Wall{
 
     public void ResetWall()
     {
+        ReplaceAllMaterials(collider.gameObject, originMaterial);
+
+
         //Debug.Log("ResetingWallFor: " + collider.gameObject.name);
         if (collider.GetComponent<Renderer>() != null)
         {
             collider.GetComponent<Renderer>().material = originMaterial;
         }
     }
+
+    public void ReplaceAllMaterials(GameObject targetObject, Material newMaterial)
+    {
+        Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer renderer in renderers)
+        {
+            Material[] newMats = new Material[renderer.materials.Length];
+            for (int i = 0; i < newMats.Length; i++)
+            {
+                newMats[i] = newMaterial;
+            }
+
+            renderer.materials = newMats;
+        }
+    }
+
 }

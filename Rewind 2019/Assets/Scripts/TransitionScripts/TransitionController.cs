@@ -153,6 +153,13 @@ public class TransitionController : MonoBehaviour
         {
             body3d.SetActive(false);
             body2d.SetActive(true);
+            AudioManager.instance.GetSource("Music3D").volume = 0f;
+            AudioManager.instance.GetSource("2DMusic").volume = .5f;
+        }
+        else
+        {
+            AudioManager.instance.GetSource("Music3D").volume = .5f;
+            AudioManager.instance.GetSource("2DMusic").volume = 0f;
         }
 
         Time.timeScale = 1f;
