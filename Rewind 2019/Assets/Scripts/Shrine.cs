@@ -62,14 +62,14 @@ public class Shrine : MonoBehaviour
         }
         isActive = true;
         playData.lastCheckpointIndex = ShrineIndex;
-        GetComponent<Renderer>().material = activeMaterial;
+        shineActive.material = activeMaterial;
         
     }
 
     public void DeactivateShrine()
     {
         isActive = false;
-        GetComponent<Renderer>().material = inactiveMaterial;
+        shineActive.material = inactiveMaterial;
     }
     
     public void SpawnPlayerAtShrine()
@@ -80,6 +80,6 @@ public class Shrine : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        GetComponent<Renderer>().material = activeMaterial;
+        shineActive.material = activeMaterial;
     }
 }
