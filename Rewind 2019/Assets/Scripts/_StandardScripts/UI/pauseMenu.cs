@@ -54,4 +54,9 @@ public class pauseMenu : MonoBehaviour
 			mainMixer.SetFloat("sfxVolume", volumeSliders[2].value);
 		}
 	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
 }

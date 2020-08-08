@@ -160,4 +160,9 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = toggle;
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
