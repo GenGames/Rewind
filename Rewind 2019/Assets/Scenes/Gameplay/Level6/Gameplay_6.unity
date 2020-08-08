@@ -36111,6 +36111,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2x2WoodPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 4959302843809212735, guid: bc895d3b4fea0344ea3601349bba9f13,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 4179514700291557522, guid: bc895d3b4fea0344ea3601349bba9f13,
         type: 3}
       propertyPath: m_LocalPosition.x
