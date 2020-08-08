@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,6 +207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -1268,6 +1278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0050084232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -3937,6 +3952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4007,6 +4027,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.009414391
       objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
 --- !u!4 &176208988 stripped
@@ -4026,6 +4051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stone tile Base (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
@@ -4096,6 +4126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -10665,6 +10700,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10734,6 +10774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.009414391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -11542,6 +11587,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11611,6 +11661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -11755,6 +11810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11824,6 +11884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -17684,6 +17749,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17753,6 +17823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -19820,6 +19895,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0050084232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -23905,6 +23985,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0050084223
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -32779,6 +32864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32848,6 +32938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -35028,6 +35123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35097,6 +35197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -41402,6 +41507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -41471,6 +41581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -41990,6 +42105,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42059,6 +42179,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.009414391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -43164,6 +43289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0050084232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
@@ -50714,6 +50844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone tile Base (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 322756889179911443, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
+      objectReference: {fileID: 0}
     - target: {fileID: 3612432768676792064, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50783,6 +50918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0094143925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6188748507597864483, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78,
+        type: 3}
+      propertyPath: m_TagString
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8df9dff6d1bd8ba4093bf40e0bc5ca78, type: 3}
