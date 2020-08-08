@@ -23,9 +23,12 @@ public class GameManager : MonoBehaviour
     public GameObject loadingScreen;
     public GameObject pausedMenu;
     public bool isGamePaused;
+    public bool doesMouseLockOnStart = true;
 
     private void Start()
     {
+        ToggleMouseOnOrOff(doesMouseLockOnStart);
+
         if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "LevelSelection")
         {
             if (!AudioManager.instance.IsPlaying("MainMenuMusic"))
@@ -80,6 +83,7 @@ public class GameManager : MonoBehaviour
         {
             if (!isGamePaused)
             {
+                ToggleMouseOnOrOff(true);
                 isGamePaused = true;
                 pausedMenu.SetActive(true);
                 Time.timeScale = 0;
@@ -90,6 +94,8 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                ToggleMouseOnOrOff(false);
+
                 isGamePaused = false;
                 pausedMenu.SetActive(false);
                 Time.timeScale = 1;
@@ -147,5 +153,11 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         GoToSceneName(SceneManager.GetActiveScene().name);
+    }
+
+    public void ToggleMouseOnOrOff(bool toggle)
+    {
+        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = toggle;
     }
 }

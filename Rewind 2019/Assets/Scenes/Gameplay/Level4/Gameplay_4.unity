@@ -6318,6 +6318,11 @@ PrefabInstance:
       propertyPath: pausedMenu
       value: 
       objectReference: {fileID: 1328692053}
+    - target: {fileID: 7699739708348214372, guid: 5e06a8df066b6964184fc288b19b785f,
+        type: 3}
+      propertyPath: doesMouseLockOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7699739708474032688, guid: 5e06a8df066b6964184fc288b19b785f,
         type: 3}
       propertyPath: m_LocalPosition.x
