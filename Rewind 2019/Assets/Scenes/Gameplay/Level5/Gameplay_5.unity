@@ -6018,6 +6018,13 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1083732914, guid: a1861a944cbed87448256b415a2ecdca, type: 3}
+      propertyPath: m_Text
+      value: 'TEMPLE ESCAPED
+
+
+        YOU SURVIVED!'
+      objectReference: {fileID: 0}
     - target: {fileID: 2991394181710962704, guid: a1861a944cbed87448256b415a2ecdca,
         type: 3}
       propertyPath: m_AnchoredPosition.x
