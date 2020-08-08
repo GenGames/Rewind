@@ -15,6 +15,7 @@ public class DisableWhenTouching : MonoBehaviour
             && !other.gameObject.CompareTag("targetable")
             && !other.gameObject.CompareTag("interactable") 
             && !other.gameObject.CompareTag("platform") 
+            && !other.gameObject.CompareTag("floor") 
             && other != GetComponent<Collider>()
             && other != GetComponent<Renderer>())
         {
@@ -30,7 +31,8 @@ public class DisableWhenTouching : MonoBehaviour
         if (!other.gameObject.CompareTag("Player") 
             && !other.gameObject.CompareTag("targetable")
             && !other.gameObject.CompareTag("interactable") 
-            && !other.gameObject.CompareTag("platform") 
+            && !other.gameObject.CompareTag("platform")
+            && !other.gameObject.CompareTag("floor")
             && other != GetComponent<Collider>()
             && other != GetComponent<Renderer>())
         {
