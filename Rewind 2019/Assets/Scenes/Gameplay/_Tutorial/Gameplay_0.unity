@@ -25530,7 +25530,7 @@ PrefabInstance:
     - target: {fileID: 7699739708348214372, guid: 5e06a8df066b6964184fc288b19b785f,
         type: 3}
       propertyPath: doesMouseLockOnStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7699739708474032688, guid: 5e06a8df066b6964184fc288b19b785f,
         type: 3}

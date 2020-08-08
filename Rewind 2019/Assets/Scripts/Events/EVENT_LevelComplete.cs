@@ -41,7 +41,7 @@ public class EVENT_LevelComplete : EventTrigger
         Time.timeScale = 1f;
         YouWonUI.SetActive(false);
 
-        if (PlayData.instance.currentLevel  > 6)
+        if (PlayData.instance.currentLevel  > 5)
         {
             GameManager.instance.GoToSceneName("Credits");
         }
