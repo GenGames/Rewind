@@ -23,11 +23,11 @@ public class Shrine : MonoBehaviour
         interactionText.SetActive(false);
         if (isActive)
         {
-            GetComponent<Renderer>().material = activeMaterial;
+            shineActive.material = activeMaterial;
         }
         else
         {
-            GetComponent<Renderer>().material = inactiveMaterial;
+            shineActive.material = inactiveMaterial;
         }
     }
     private void OnTriggerStay(Collider other)
