@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: a81bda6f85ae60c40917917e697a1b20, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -683,16 +683,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,6 +752,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -1543,10 +1543,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1900414318}
-    - target: {fileID: 1878697979, guid: a1861a944cbed87448256b415a2ecdca, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2087165576, guid: a1861a944cbed87448256b415a2ecdca, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1572,11 +1568,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.025024414
       objectReference: {fileID: 0}
-    - target: {fileID: 7438120200901302134, guid: a1861a944cbed87448256b415a2ecdca,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3729156806493590538, guid: a1861a944cbed87448256b415a2ecdca,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1591,6 +1582,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878697979, guid: a1861a944cbed87448256b415a2ecdca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438120200901302134, guid: a1861a944cbed87448256b415a2ecdca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1861a944cbed87448256b415a2ecdca, type: 3}
@@ -2064,16 +2064,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2143,6 +2133,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -2358,16 +2358,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2437,6 +2427,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -2677,16 +2677,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2756,6 +2746,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -3570,16 +3570,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3649,6 +3639,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 60.586563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -4113,16 +4113,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4192,6 +4182,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -4445,16 +4445,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4524,6 +4514,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -4791,16 +4791,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4870,6 +4860,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 60.586563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -5332,16 +5332,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5411,6 +5401,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -5641,16 +5641,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5720,6 +5710,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -5818,6 +5818,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 311158161, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: fireCooldown
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_JumpPower
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5862,9 +5870,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11469404, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_JumpPower
-      value: 3
+    - target: {fileID: 127968, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: cameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 450107368}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: cameras.Array.data[1]
+      value: 
+      objectReference: {fileID: 1714904091}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: deathText
+      value: 
+      objectReference: {fileID: 197998025}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 197998026}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: cameras
+      value: 
+      objectReference: {fileID: 1250820918}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 666801594}
+    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: characterDeathHeight
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: healthBar.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: healthBar.Array.data[0]
+      value: 
+      objectReference: {fileID: 1878697981}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: enableOnTakingdamage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: enableOnTakingDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: healthBar.Array.data[1]
+      value: 
+      objectReference: {fileID: 197998024}
+    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: showOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110147272, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: onDeathDestroy
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 487818, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5894,9 +5958,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.011661877
       objectReference: {fileID: 0}
-    - target: {fileID: 127968, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+    - target: {fileID: 1636884728, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 420453949, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
+      propertyPath: maxAngle
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 449582, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7317,74 +7385,6 @@ PrefabInstance:
     - target: {fileID: 474146, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.000000037252903
-      objectReference: {fileID: 0}
-    - target: {fileID: 311158161, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: fireCooldown
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: cameras.Array.data[0]
-      value: 
-      objectReference: {fileID: 450107368}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: cameras.Array.data[1]
-      value: 
-      objectReference: {fileID: 1714904091}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: deathText
-      value: 
-      objectReference: {fileID: 197998025}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: deathScreen
-      value: 
-      objectReference: {fileID: 197998026}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: cameras
-      value: 
-      objectReference: {fileID: 1250820918}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: playerCollider
-      value: 
-      objectReference: {fileID: 666801594}
-    - target: {fileID: 311158168, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: characterDeathHeight
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: healthBar.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: healthBar.Array.data[0]
-      value: 
-      objectReference: {fileID: 1878697981}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: enableOnTakingdamage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: enableOnTakingDamage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: healthBar.Array.data[1]
-      value: 
-      objectReference: {fileID: 197998024}
-    - target: {fileID: 1110147271, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: showOnStart
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1110147272, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: onDeathDestroy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420453949, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: maxAngle
-      value: 66
-      objectReference: {fileID: 0}
-    - target: {fileID: 1636884728, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
-      propertyPath: m_TagString
-      value: interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 3}
@@ -9854,16 +9854,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9933,6 +9923,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -10033,16 +10033,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10112,6 +10102,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -10609,15 +10609,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2432120983798006858, guid: 61eea763430f48c40b910145d22c914f,
-        type: 3}
-      propertyPath: deathCountToPlay
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2432120985277241902, guid: 61eea763430f48c40b910145d22c914f,
         type: 3}
       propertyPath: m_Text
       value: IN RETRO MODE, YOU MOVE FASTER AND CAN JUMP MUCH HIGHER. USE 'Q' TO SWITCH.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432120983798006858, guid: 61eea763430f48c40b910145d22c914f,
+        type: 3}
+      propertyPath: deathCountToPlay
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61eea763430f48c40b910145d22c914f, type: 3}
@@ -10708,16 +10708,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10787,6 +10777,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 60.586563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -11029,16 +11029,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11108,6 +11098,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -12151,16 +12151,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12231,6 +12221,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 59.779842
       objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
 --- !u!1001 &1385436161
@@ -12240,16 +12240,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12319,6 +12309,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -12474,16 +12474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12553,6 +12543,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 60.586563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -12637,16 +12637,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12716,6 +12706,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -13027,16 +13027,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13106,6 +13096,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -13281,16 +13281,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13360,6 +13350,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -15448,16 +15448,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15527,6 +15517,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -15690,16 +15690,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15770,6 +15760,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 54.879135
       objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
 --- !u!1001 &1850949269
@@ -15779,16 +15779,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15858,6 +15848,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -16622,16 +16622,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16701,6 +16691,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -17653,16 +17653,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17732,6 +17722,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -18068,6 +18068,12 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: -0.7573304
       objectReference: {fileID: 0}
+    - target: {fileID: 2432120985277241902, guid: 61eea763430f48c40b910145d22c914f,
+        type: 3}
+      propertyPath: m_Text
+      value: YOU ARE STILL IN 3D SPACE, EVEN IN RETRO MODE, MAKE SURE YOU POSITION
+        YOURSELF SO YOU JUMP ONTO A PLATFORM
+      objectReference: {fileID: 0}
     - target: {fileID: 2432120983798006858, guid: 61eea763430f48c40b910145d22c914f,
         type: 3}
       propertyPath: deathCountToPlay
@@ -18077,12 +18083,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2432120985277241902, guid: 61eea763430f48c40b910145d22c914f,
-        type: 3}
-      propertyPath: m_Text
-      value: YOU ARE STILL IN 3D SPACE, EVEN IN RETRO MODE, MAKE SURE YOU POSITION
-        YOURSELF SO YOU JUMP ONTO A PLATFORM
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61eea763430f48c40b910145d22c914f, type: 3}
@@ -18418,16 +18418,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18497,6 +18487,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 54.879135
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
@@ -18677,16 +18677,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_Name
-      value: WoodenPlatform (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 2969353453530697250, guid: be8565f2bd72cfc499de95c431dda918,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18756,6 +18746,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 59.779842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenPlatform (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264777225910893617, guid: be8565f2bd72cfc499de95c431dda918,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be8565f2bd72cfc499de95c431dda918, type: 3}
