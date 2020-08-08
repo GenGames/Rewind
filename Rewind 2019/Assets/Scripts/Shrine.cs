@@ -15,6 +15,7 @@ public class Shrine : MonoBehaviour
     public int ShrineIndex;
 
     public GameObject[] enemiesBehindShrine;
+    public Renderer shineActive;
 
     private void Start()
     {
